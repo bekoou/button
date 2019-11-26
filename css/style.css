@@ -1,0 +1,96 @@
+body{
+    font-family: sans-serif;
+    background: #282828;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 0 7px white;
+    border-radius: 3px;
+    padding: 30px 60px;
+    overflow: hidden;
+}
+.btn span:nth-child(1){
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #bb8300;
+    left: 0;
+    top: 0;
+    animation: anim 2s ease-in-out infinite;
+
+}
+@keyframes anim {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+.btn span:nth-child(2){
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #bb8300;
+    right: 0;
+    top: 0;
+    animation: anim2 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.btn span:nth-child(3){
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #bb8300;
+    left: 0;
+    bottom: 0;
+    animation: anim3 2s ease-in-out infinite;
+}
+
+@keyframes anim3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.btn span:nth-child(4){
+
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #bb8300;
+    left: 0;
+    bottom: 0;
+    animation: anim4 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes anim4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
